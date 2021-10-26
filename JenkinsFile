@@ -4,7 +4,7 @@ pipeline {
       stage('Checkout Codebase') {
         steps { 
            cleanWs()
-           checkout scm: [$class: 'GitSCM',userRemoteConfigs: [[credentialsId: 'GitHubSShkey',url: 'git@github.com:MohamedHammouda/ConsoleLuncher2.git']]]  
+           checkout scm: [$class: 'GitSCM',userRemoteConfigs: [[credentialsId: 'GitHubSShkey',url: 'git@github.com:MohamedHammouda/ConsoleLuncher2.git']]]   
          } 
        } 
       
