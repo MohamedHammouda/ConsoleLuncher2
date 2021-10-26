@@ -18,7 +18,7 @@ pipeline {
         }
       stage('Test'){
             steps{
-                bat 'java -jar "lib/junit-platform-console-standalone-1.8.1.jar" -cp target -c com.FirstTes'
+                bat 'java -jar "lib/junit-platform-console-standalone-1.8.1.jar" -cp target -c com.FirstTes' 
                 
             }
         }
